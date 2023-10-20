@@ -2,6 +2,32 @@ import math
 import numpy as np
 
 
+def _norm2(v1d):
+    """
+    Hyperoptimized norm of list or vector with shape (2,)
+
+    Args:
+        v1d (list): Input vector. MUST have length 2
+
+    Returns:
+        (float): norm of the vector
+    """
+    return math.sqrt(v1d[0] ** 2 + v1d[1] ** 2)
+
+
+def _norm3(v1d):
+    """
+    Hyperoptimized norm of list or vector with shape (3,)
+
+    Args:
+        v1d (list): Input vector. MUST have length 3
+
+    Returns:
+        (float): norm of the vector
+    """
+    return math.sqrt(v1d[0] ** 2 + v1d[1] ** 2 + v1d[2] ** 2)
+
+
 def norm1d(v1d):
     """
     Compute the norm of a one dimensional vector.
