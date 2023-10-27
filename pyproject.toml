@@ -12,4 +12,4 @@ dependencies = ["numpy>=1.19.0","coxeter"]
 
 
 [tool.setuptools]
-packages=["jen"]
+packages=["pyutils"]
