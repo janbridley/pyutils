@@ -10,6 +10,7 @@ with open(os.path.join(_DATA_FOLDER, "polydata.json"), "r") as json_file:
 
 # Define characters and their respective ranges
 def get_shortcodes(families=None, ranges=None, n_shapes=None):
+    families = [char.capitalize() for char in families]
     all_characters = [
         ("P", 1, 5),
         ("A", 1, 13),
